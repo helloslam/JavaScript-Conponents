@@ -1,0 +1,63 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+img {
+    height: 500px;
+    width: 1000px;
+}
+
+.carousel-box {
+    height: 540px;
+    width: 1020px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.prcture-ul {
+    list-style-type: none;
+    position: absolute;
+}
+
+.prcture-ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.box-nav {
+    position: absolute;
+    bottom: 60px;
+}
+
+.box-nav a {
+    display: block;
+    float: left;
+    height: 5px;
+    width: 30px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 3;
+}
+
+.box-button {
+    position: absolute;
+    bottom: 240px;
+    padding: 15px;
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-button button {
+    float: left;
+    height: 80px;
+    line-height: 30px;
+    width: 40px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 0.274);
+    border: none;
+    border-radius: 10%;
+    color: rgba(253, 252, 252, 0.411);
+}
