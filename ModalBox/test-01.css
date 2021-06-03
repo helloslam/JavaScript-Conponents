@@ -1,0 +1,162 @@
+/* 模态框样式文件 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 模态框驱动按钮外部div */
+
+.room {
+    /* 宽高 */
+    width: 100%;
+    height: 100vh;
+    /* 弹性布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+}
+
+
+/* 模态框驱动按钮样式 */
+
+.button {
+    /* 背景色 */
+    background-color: cornflowerblue;
+    /* 宽高 */
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+/* 模态框容器样式 */
+
+.window {
+    background-color: rgba(0, 0, 0, 0.432);
+    /* 宽高 */
+    width: 100%;
+    height: 100%;
+    /* 隐藏 */
+    display: none;
+    /* 定位 */
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* 模态框内容样式 */
+
+.window-content {
+    /* 宽高 */
+    width: 350px;
+    height: auto;
+    /* 弹性布局 */
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 10% auto auto auto;
+    animation: try1 1s;
+}
+
+@keyframes try1 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes try2 {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* 模态框头部样式 */
+
+.empty {
+    width: 40px;
+}
+
+.window-content-header {
+    /* 宽高 */
+    height: 40px;
+    background-color: rgba(39, 96, 202, 0.397);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.window-content-header {
+    /* 宽高 */
+    height: 40px;
+}
+
+.header-ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: white;
+}
+
+.header-title {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.header-close {
+    flex: 0 1 auto;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+}
+
+
+/* 模态框躯干样式 */
+
+.window-content-body {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    margin: auto;
+    height: 20px;
+}
+
+
+/* 模态框尾部样式 */
+
+.footer-ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: white;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.footer-btn-reply,
+.footer-btn-closs {
+    width: 60px;
+    background-color: rgba(39, 96, 202, 0.397);
+    color: white;
+}
